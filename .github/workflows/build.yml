@@ -10,6 +10,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: show free space
+        run: |
+            df -h
+
       - name: Validate package
         uses: heyhusen/archlinux-package-action@v2
         with:
