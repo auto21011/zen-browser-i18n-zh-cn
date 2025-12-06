@@ -4,7 +4,7 @@ pkgbase=zen-browser
 pkgname=("$pkgbase")
 pkgver=1.17.12b
 _zen_version=${pkgver//_/-}
-_firefox_version=144.0.2
+_firefox_version=145.0.2
 pkgrel=1
 pkgdesc='Experience tranquillity while browsing the web without people tracking you'
 url='https://zen-browser.app/'
@@ -85,14 +85,14 @@ source=(
   0003-do-not-disable-system-extensions.zen.patch
   0004-fix-package-json.zen.patch
   0005-source-firefox-language-packs.patch
-  )
+)
 sha256sums=('SKIP'
-            'eac4722ed259008d73006c4894c18d2871702c661d14e27505812351df62806b'
-            'SKIP'
-            '523fba56892357a1b37811021e06d548cb94af58948294a436c566581e7454a9'
-            '36bff2af04da55da0cc71f960d921889ccf21c11fcd8343087c144dfcc50f10a'
-            '803c3f456abfc1acd963b594cf684aed2453534e7ab951abc38efa0351b648a1'
-            '7702c197f5509e4ec7e744f74105cc8339b631e37f7a0b41bf3070bf3ccc92a7')
+  'd7c5b4c6b5d47b51f2b548403defaf53b1072c621ee3fa11c77f86b3cf84858d'
+  'SKIP'
+  '523fba56892357a1b37811021e06d548cb94af58948294a436c566581e7454a9'
+  '36bff2af04da55da0cc71f960d921889ccf21c11fcd8343087c144dfcc50f10a'
+  '803c3f456abfc1acd963b594cf684aed2453534e7ab951abc38efa0351b648a1'
+  '7702c197f5509e4ec7e744f74105cc8339b631e37f7a0b41bf3070bf3ccc92a7')
 noextract=("firefox-${_firefox_version}.source.tar.xz")
 
 _languages=(zh-CN zh-TW ja)
